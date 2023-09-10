@@ -1,0 +1,15 @@
+[package]
+name = "python_interop"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+pyo3 = { version = "0.19", features = ["auto-initialize"] }
+numpy = "0.19"
+jni = "0.21.1"
+libloading = "0.8"
